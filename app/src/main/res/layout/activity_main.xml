@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backg">
+
+    <ImageView
+        android:id="@+id/imageView_Logo"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/zelogoputih"/>
+    <TextView
+        android:id="@+id/Tv_moto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moto"
+        android:layout_below="@id/imageView_Logo"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/googlesans"
+        android:textSize="24sp"
+        android:layout_marginTop="45dp"
+        android:textColor="#fff"/>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/layout_Button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonSignIn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:layout_marginRight="3dp"-->
+            <!--android:text="@string/masuk"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="18sp"-->
+            <!--android:fontFamily="@font/googlesans"-->
+            <!--android:textColor="#fff"-->
+            <!--android:background="@drawable/btn_sign"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonSignUp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:text="@string/daftar"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="18sp"-->
+            <!--android:fontFamily="@font/googlesans"-->
+            <!--android:textColor="#fff"-->
+            <!--android:background="@drawable/btn_daftar"/>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
