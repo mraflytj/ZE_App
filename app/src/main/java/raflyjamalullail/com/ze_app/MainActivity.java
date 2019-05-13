@@ -1,30 +1,38 @@
 package raflyjamalullail.com.ze_app;
 
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_SignIn;
-    Button btn_SignUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn_SignIn = findViewById(R.id.buttonSignIn);
-        btn_SignUp = findViewById(R.id.buttonSignUp);
+        ImageView logo = findViewById(R.id.imageView_Logo);
+        TextView moto = findViewById(R.id.Tv_moto);
+        AlphaAnimation animation = new AlphaAnimation(0f, 1f);
+        animation.setFillAfter(true);
+        animation.setDuration(3000);
+        logo.setAnimation(animation);
+        moto.setAnimation(animation);
 
-        btn_SignIn.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            public void run() {
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
                 startActivity(intent);
+                finish();
             }
-        });
+        }, 3000);
     }
 }
