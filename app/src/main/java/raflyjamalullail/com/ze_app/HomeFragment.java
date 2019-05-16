@@ -46,12 +46,13 @@ public class HomeFragment extends Fragment {
     }
 
     private void setupSlider() {
-//        sliderView.setDurationScroll(800);
+        sliderView.setDurationScroll(800);
         List<Fragment> fragments = new ArrayList<>();
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-1.jpg"));
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-2.jpg"));
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-3.jpg"));
-        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-4.jpg"));
+        fragments.add(FragmentSlider.newInstance(R.drawable.image_slider_1));
+        fragments.add(FragmentSlider.newInstance(R.drawable.ic_launcher_background));
+//        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-2.jpg"));
+//        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-3.jpg"));
+//        fragments.add(FragmentSlider.newInstance("http://www.menucool.com/slider/prod/image-slider-4.jpg"));
 
         mAdapter = new SliderPagerAdapter(getFragmentManager(), fragments);
         sliderView.setAdapter(mAdapter);

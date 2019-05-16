@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ZE_App</string>
+    <string name="app_name">Zenith Revenue</string>
     <string name="daftar">Daftar</string>
     <string name="moto">Your Event Solutions</string>
     <string name="prompt_email">Email</string>
@@ -24,4 +24,6 @@
     <string name="masukfb">Facebook</string>
     <string name="feed"><b>Feed</b></string>
     <string name="cate"><b>Categories</b></string>
+    <string name="service"><b>Services</b></string>
+    <string name="see_all">See All</string>
 </resources>

@@ -8,4 +8,8 @@
         <!--<item name="colorAccent">@color/color1</item>-->
     </style>
 
+    <style name="SplashScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/color2</item>
+    </style>
+
 </resources>
