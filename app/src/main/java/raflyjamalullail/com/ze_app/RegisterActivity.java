@@ -1,18 +1,21 @@
 package raflyjamalullail.com.ze_app;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class RegisterActivity extends AppCompatActivity {
 
     TextView masuk;
     AppCompatButton btn_Daftar;
+//    EditText
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,10 +42,10 @@ public class RegisterActivity extends AppCompatActivity {
         btn_Daftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(RegisterActivity.this, HomeActActivity.class);
+                Intent i = new Intent(RegisterActivity.this, RegisterActivity2.class);
                 startActivity(i);
 
-                finish();
+//                finish();
             }
         });
     }

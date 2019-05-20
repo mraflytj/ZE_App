@@ -18,16 +18,56 @@
             android:layout_height="wrap_content"
             android:padding="20dp">
 
-            <TextView
-                android:id="@+id/tv_Feed"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:id="@+id/layoutAtas"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/feed"
-                android:layout_centerHorizontal="true"
-                android:fontFamily="@font/googlesans"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"/>
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgChat"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_chat"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/imgFav"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:srcCompat="@drawable/ic_favorite"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="0"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/eT_Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/fbgoogle_btn"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="5dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:hint="@string/cari"
+                    android:layout_weight="0.3"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/googlesans"
+                    android:drawableStart="@drawable/ic_search"/>
+
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_Feed"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/feed"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:fontFamily="@font/googlesans"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"/>-->
 
             <!--<android.support.v4.view.ViewPager-->
                 <!--android:id="@+id/view_Pager"-->
@@ -41,8 +81,8 @@
             <RelativeLayout
                 android:id="@+id/layout_top"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_below="@id/tv_Feed"
+                android:layout_height="180dp"
+                android:layout_below="@id/layoutAtas"
                 android:layout_marginTop="15dp">
 
                 <FrameLayout
@@ -79,13 +119,12 @@
                 android:text="@string/cate"
                 android:fontFamily="@font/googlesans"
                 android:textColor="@android:color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:layout_below="@id/layout_top"
-                android:layout_marginTop="25dp"
-                android:textStyle="bold"/>
+                android:layout_marginTop="25dp"/>
 
-            <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerView"
+            <android.support.v7.widget.CardView
+                android:id="@+id/CardView"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:orientation="horizontal"
@@ -100,10 +139,9 @@
                 android:text="@string/service"
                 android:fontFamily="@font/googlesans"
                 android:textColor="@android:color/black"
-                android:textSize="24sp"
-                android:layout_below="@id/recyclerView"
-                android:layout_marginTop="25dp"
-                android:textStyle="bold"/>
+                android:textSize="20sp"
+                android:layout_below="@id/CardView"
+                android:layout_marginTop="25dp"/>
 
             <TextView
                 android:id="@+id/tv_SeeAll"
@@ -111,8 +149,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/see_all"
                 android:fontFamily="@font/googlesans"
-                android:textSize="18sp"
-                android:layout_below="@id/recyclerView"
+                android:textSize="14sp"
+                android:layout_below="@id/CardView"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="30dp"/>
             
@@ -323,11 +361,35 @@
 
             </android.support.v7.widget.CardView>
 
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/ic_search"
-                android:layout_alignParentEnd="true"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSearch"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--app:srcCompat="@drawable/ic_search"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginTop="5dp"/>-->
+
+            <TextView
+                android:id="@+id/tv_Best"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/best"
+                android:fontFamily="@font/googlesans"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_below="@id/cardView2"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/tv_SeeAll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/see_all"
+                android:fontFamily="@font/googlesans"
+                android:textSize="14sp"
+                android:layout_below="@id/cardView4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"/>
 
         </RelativeLayout>
 

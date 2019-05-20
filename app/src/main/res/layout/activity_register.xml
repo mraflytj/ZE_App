@@ -34,49 +34,44 @@
     </LinearLayout>
 
     <android.support.v7.widget.AppCompatButton
-        android:id="@+id/buttonGoogle"
-        android:layout_width="160dp"
+        android:id="@+id/btnGoogle"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/fbgoogle_btn"
         android:text="@string/masukgoo"
         android:textColor="@android:color/black"
         android:textAllCaps="false"
         android:textSize="18sp"
+        android:layout_below="@id/layout_Masukdong"
+        android:layout_marginTop="25dp"
         android:elevation="20dp"
         android:fontFamily="@font/googlesans"
         android:drawableStart="@drawable/googlelogo"
         android:drawablePadding="20dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="50dp"
         android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:layout_marginEnd="5dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@id/layout_Masukdong"
-        android:layout_marginTop="25dp"/>
+        android:paddingBottom="12dp"/>
 
     <android.support.v7.widget.AppCompatButton
-        android:id="@+id/buttonFacebook"
-        android:layout_width="155dp"
+        android:id="@+id/btnFacebook"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/fbgoogle_btn"
         android:text="@string/masukfb"
         android:textColor="@android:color/black"
         android:textAllCaps="false"
         android:textSize="18sp"
+        android:layout_below="@id/btnGoogle"
+        android:layout_marginTop="15dp"
         android:elevation="20dp"
         android:fontFamily="@font/googlesans"
         android:drawableStart="@drawable/fblogo"
         android:drawablePadding="20dp"
-        android:paddingStart="10dp"
-        android:paddingEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="50dp"
         android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:layout_toEndOf="@id/buttonGoogle"
-        android:layout_marginStart="5dp"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@id/layout_Masukdong"
-        android:layout_marginTop="25dp"/>
+        android:paddingBottom="12dp"/>
 
     <TextView
         android:id="@+id/tv_Atau"
@@ -85,7 +80,7 @@
         android:fontFamily="@font/googlesans"
         android:text="atau masuk dengan"
         android:textSize="14sp"
-        android:layout_below="@id/buttonGoogle"
+        android:layout_below="@id/btnFacebook"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 
@@ -94,7 +89,7 @@
         android:layout_height="2dp"
         android:background="@android:color/darker_gray"
         android:layout_toEndOf="@id/tv_Atau"
-        android:layout_below="@id/buttonFacebook"
+        android:layout_below="@id/btnFacebook"
         android:layout_marginTop="30dp"
         android:layout_marginStart="13dp"/>
 
@@ -103,7 +98,7 @@
         android:layout_height="2dp"
         android:background="@android:color/darker_gray"
         android:layout_toStartOf="@id/tv_Atau"
-        android:layout_below="@id/buttonGoogle"
+        android:layout_below="@id/btnFacebook"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="13dp"/>
 

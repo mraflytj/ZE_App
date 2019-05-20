@@ -1,14 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lists Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:padding="20dp">
 
-</RelativeLayout>
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fbgoogle_btn"
+            android:paddingEnd="10dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="@string/cari"
+            android:drawableStart="@drawable/ic_search"
+            android:fontFamily="@font/googlesans"/>
+
+        <TextView
+            android:id="@+id/menampilkan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etSearch"
+            android:text="Menampilkan hasil jasa..."
+            android:layout_marginTop="30dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/googlesans"/>
+
+        <ImageView
+            android:id="@+id/sortBy"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/menampilkan"
+            app:srcCompat="@drawable/ic_filter_black"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:id="@+id/filterBy"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/menampilkan"
+            app:srcCompat="@drawable/ic_filter_bl"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</ScrollView>
