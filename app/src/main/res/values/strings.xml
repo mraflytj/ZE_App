@@ -27,4 +27,9 @@
     <string name="telp">Nomor Telpon</string>
     <string name="cari">Cari di ZE</string>
     <string name="best">Best Seller</string>
+    <string name="edit">Edit Profil</string>
+    <string name="history">History</string>
+    <string name="myorder">Order Saya</string>
+    <string name="myfav">Wishlist Saya</string>
+    <string name="jadieo">Buka EO</string>
 </resources>

@@ -9,8 +9,8 @@
         android:layout_height="wrap_content"
         android:padding="20dp">
 
-        <EditText
-            android:id="@+id/etSearch"
+        <TextView
+            android:id="@+id/tvSearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/fbgoogle_btn"
@@ -20,13 +20,14 @@
             android:paddingBottom="10dp"
             android:hint="@string/cari"
             android:drawableStart="@drawable/ic_search"
-            android:fontFamily="@font/googlesans"/>
+            android:fontFamily="@font/googlesans"
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/menampilkan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/etSearch"
+            android:layout_below="@id/tvSearch"
             android:text="Menampilkan hasil jasa..."
             android:layout_marginTop="30dp"
             android:textSize="16sp"

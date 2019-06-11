@@ -24,25 +24,24 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imgChat"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    app:srcCompat="@drawable/ic_chat"
-                    android:layout_weight="0"
-                    android:layout_gravity="center_vertical"/>
+                <!--<ImageView-->
+                    <!--android:id="@+id/imgChat"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--app:srcCompat="@drawable/ic_chat"-->
+                    <!--android:layout_weight="0"-->
+                    <!--android:layout_gravity="center_vertical"/>-->
 
                 <ImageView
                     android:id="@+id/imgFav"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:srcCompat="@drawable/ic_favorite"
-                    android:layout_marginStart="10dp"
                     android:layout_weight="0"
                     android:layout_gravity="center_vertical"/>
 
-                <EditText
-                    android:id="@+id/eT_Search"
+                <TextView
+                    android:id="@+id/tv_Search"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/fbgoogle_btn"
@@ -54,7 +53,8 @@
                     android:layout_weight="0.3"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/googlesans"
-                    android:drawableStart="@drawable/ic_search"/>
+                    android:drawableStart="@drawable/ic_search"
+                    android:textSize="20sp"/>
 
             </LinearLayout>
 
