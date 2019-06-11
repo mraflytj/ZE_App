@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "834426751266",
+    "firebase_url": "https://zeapp-94eaa.firebaseio.com",
+    "project_id": "zeapp-94eaa",
+    "storage_bucket": "zeapp-94eaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834426751266:android:e107037dec8fe412",
+        "android_client_info": {
+          "package_name": "raflyjamalullail.com.ze_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834426751266-bc1pfhvdsnq1197bkqaufr9dgv1ft1db.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "raflyjamalullail.com.ze_app",
+            "certificate_hash": "207bdc981a3ded4ed2caa16206ac88c20f1ce027"
+          }
+        },
+        {
+          "client_id": "834426751266-daiq77h1uotfpd7082bv027f3j61vsos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiqY4krOkUZ-R-veCpDdxMO1P42kUn1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834426751266-daiq77h1uotfpd7082bv027f3j61vsos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
