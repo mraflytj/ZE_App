@@ -1,21 +1,11 @@
 package raflyjamalullail.com.ze_app;
 
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
-import android.support.v7.widget.DividerItemDecoration;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.widget.LinearLayout;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class HomeActActivity extends AppCompatActivity {
 
@@ -43,7 +33,7 @@ public class HomeActActivity extends AppCompatActivity {
                     selectedFragment = new HomeFragment();
                     break;
                 case R.id.navigation_lists:
-                    selectedFragment = new ListsFragment();
+                    selectedFragment = new CatalogsFragment();
                     break;
                 case R.id.navigation_notifications:
                     selectedFragment = new NotificationsFragment();

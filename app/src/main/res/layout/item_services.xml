@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewServices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_EO"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/indicator_blue"/>
+            <TextView
+                android:id="@+id/tv_namaEO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_EO"
+                android:text="Nama_EO"
+                android:fontFamily="@font/googlesans"
+                android:textSize="14sp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/tv_emailEO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_EO"
+                android:layout_below="@id/tv_namaEO"
+                android:text="Email"
+                android:fontFamily="@font/googlesans"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_alamatEO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_EO"
+                android:layout_below="@id/tv_emailEO"
+                android:text="Jalan..."
+                android:fontFamily="@font/googlesans"
+                android:textSize="12sp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_kontakEO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/img_EO"
+                android:layout_below="@id/tv_alamatEO"
+                android:text="08xxxxxxxxxx"
+                android:fontFamily="@font/googlesans"
+                android:textSize="11sp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_deskripsiEO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_EO"
+                android:text="Menyediakan..."
+                android:fontFamily="@font/googlesans"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"/>
+
+            <!--<View-->
+                <!--android:id="@+id/view_Garis"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@android:color/darker_gray"-->
+                <!--android:layout_below="@id/img_EO"-->
+                <!--android:layout_marginTop="7dp"/>-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:background="@drawable/ic_fav_border"-->
+                <!--android:layout_below="@id/view_Garis"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_alignParentEnd="true"/>-->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
