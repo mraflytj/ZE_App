@@ -7,6 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.view.MenuItem;
 
+import raflyjamalullail.com.ze_app._fragment.AccountFragment;
+import raflyjamalullail.com.ze_app._fragment.CatalogsFragment;
+import raflyjamalullail.com.ze_app._fragment.HomeFragment;
+import raflyjamalullail.com.ze_app._fragment.NotificationsFragment;
+
 public class HomeActActivity extends AppCompatActivity {
 
     @Override

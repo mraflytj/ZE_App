@@ -1,21 +1,14 @@
-package raflyjamalullail.com.ze_app;
+package raflyjamalullail.com.ze_app._fragment;
 
-import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -26,6 +19,11 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import raflyjamalullail.com.ze_app.Config;
+import raflyjamalullail.com.ze_app._model.EO_Model;
+import raflyjamalullail.com.ze_app._adapter.ListViewAdapterEO;
+import raflyjamalullail.com.ze_app.R;
+import raflyjamalullail.com.ze_app.RequestHandler;
 import raflyjamalullail.com.ze_app._sliders.FragmentSlider;
 import raflyjamalullail.com.ze_app._sliders.SliderIndicator;
 import raflyjamalullail.com.ze_app._sliders.SliderPagerAdapter;

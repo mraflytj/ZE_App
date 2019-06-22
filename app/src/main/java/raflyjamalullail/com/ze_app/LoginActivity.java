@@ -1,7 +1,6 @@
 package raflyjamalullail.com.ze_app;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
@@ -23,6 +22,8 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import raflyjamalullail.com.ze_app._model.User;
 
 public class LoginActivity extends AppCompatActivity {
 

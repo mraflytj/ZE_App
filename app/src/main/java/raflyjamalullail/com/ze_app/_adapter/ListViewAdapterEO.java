@@ -1,4 +1,4 @@
-package raflyjamalullail.com.ze_app;
+package raflyjamalullail.com.ze_app._adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -10,6 +10,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import raflyjamalullail.com.ze_app._model.EO_Model;
+import raflyjamalullail.com.ze_app.R;
 
 public class ListViewAdapterEO extends ArrayAdapter<EO_Model> {
     private Context context;

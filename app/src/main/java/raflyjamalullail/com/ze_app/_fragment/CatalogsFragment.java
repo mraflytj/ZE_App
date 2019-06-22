@@ -1,4 +1,4 @@
-package raflyjamalullail.com.ze_app;
+package raflyjamalullail.com.ze_app._fragment;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -16,6 +16,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+
+import raflyjamalullail.com.ze_app.Config;
+import raflyjamalullail.com.ze_app._model.EO_Model;
+import raflyjamalullail.com.ze_app._adapter.ListViewAdapterEO;
+import raflyjamalullail.com.ze_app.R;
+import raflyjamalullail.com.ze_app.RequestHandler;
 
 public class CatalogsFragment extends Fragment {
     View v;

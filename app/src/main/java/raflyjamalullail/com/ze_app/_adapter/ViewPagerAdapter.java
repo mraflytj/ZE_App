@@ -1,4 +1,4 @@
-package raflyjamalullail.com.ze_app;
+package raflyjamalullail.com.ze_app._adapter;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;

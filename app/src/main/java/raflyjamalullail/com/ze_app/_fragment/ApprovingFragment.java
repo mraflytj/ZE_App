@@ -1,4 +1,4 @@
-package raflyjamalullail.com.ze_app;
+package raflyjamalullail.com.ze_app._fragment;
 
 import android.support.v4.app.Fragment;
 

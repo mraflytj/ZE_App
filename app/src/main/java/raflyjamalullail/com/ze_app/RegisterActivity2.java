@@ -94,6 +94,9 @@ public class RegisterActivity2 extends AppCompatActivity {
                     String success = jsonObject.getString("success");
                     if (success.equals("1")){
                         Toast.makeText(RegisterActivity2.this, "Pendaftaran berhasil!", Toast.LENGTH_SHORT).show();
+                        Intent i  = new Intent(RegisterActivity2.this,LoginActivity.class);
+                        startActivity(i);
+                        finish();
                     }
                 }catch (JSONException e){
                     e.printStackTrace();

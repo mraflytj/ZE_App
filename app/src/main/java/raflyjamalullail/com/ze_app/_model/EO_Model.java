@@ -1,4 +1,4 @@
-package raflyjamalullail.com.ze_app;
+package raflyjamalullail.com.ze_app._model;
 
 public class EO_Model {
     private String id, user_id, nama_eo, email, alamat, kontak, link, gambar_profil, deskripsi, created_at, updated_at;
