@@ -1,14 +1,18 @@
 package raflyjamalullail.com.ze_app._fragment;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
@@ -20,6 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import raflyjamalullail.com.ze_app.Config;
+import raflyjamalullail.com.ze_app.Detail_Eo;
 import raflyjamalullail.com.ze_app._model.EO_Model;
 import raflyjamalullail.com.ze_app._adapter.ListViewAdapterEO;
 import raflyjamalullail.com.ze_app.R;
@@ -39,7 +44,7 @@ public class HomeFragment extends Fragment {
     private LinearLayout mLinearLayout;
 
     private static final String TAG = "HomeFragment";
-    private ListView listViewServices;
+    private RecyclerView listViewServices;
 
     private ArrayList<EO_Model> eo_modelArrayList = new ArrayList<>();
 
@@ -49,7 +54,7 @@ public class HomeFragment extends Fragment {
         v = inflater.inflate(R.layout.fragment_home, container, false);
         sliderView = (SliderView) v.findViewById(R.id.sliderView);
         mLinearLayout = (LinearLayout) v.findViewById(R.id.pagesContainer);
-        listViewServices = (ListView) v.findViewById(R.id.list_ViewServices);
+        listViewServices = (RecyclerView) v.findViewById(R.id.list_ViewServices);
         fetchEOS();
 
         setupSlider();
@@ -84,7 +89,7 @@ public class HomeFragment extends Fragment {
             @Override
             protected String doInBackground(Void... voids) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequest(Config.URL_FETCH);
+                String s = rh.sendGetRequest(Config.URL_FETCH_EO);
                 Log.d(TAG, "doInBackground: json = "+s);
                 return s;
             }
@@ -127,8 +132,19 @@ public class HomeFragment extends Fragment {
         }catch(JSONException e){
             e.getStackTrace();
         }
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayout.HORIZONTAL, false);
+        listViewServices.setLayoutManager(layoutManager);
 
-        ListViewAdapterEO listViewAdapterEO = new ListViewAdapterEO(getActivity(), R.layout.item_services, eo_modelArrayList);
+        ListViewAdapterEO listViewAdapterEO = new ListViewAdapterEO(eo_modelArrayList, getActivity());
         listViewServices.setAdapter(listViewAdapterEO);
+
+//        listViewServices.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Intent intent = new Intent(getActivity(), Detail_Eo.class);
+//                intent.putExtra("EO_Detail", eo_modelArrayList.get(position));
+//                startActivity(intent);
+//            }
+//        });
     }
 }

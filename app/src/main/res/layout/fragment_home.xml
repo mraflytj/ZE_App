@@ -153,14 +153,12 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="30dp"/>
 
-            <ListView
+            <android.support.v7.widget.RecyclerView
                 android:id="@+id/list_ViewServices"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_Service"
-                android:layout_marginTop="20dp">
-
-            </ListView>
+                android:layout_marginTop="20dp"/>
 
             <!--<ImageView-->
                 <!--android:id="@+id/imgSearch"-->

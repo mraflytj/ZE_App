@@ -1,6 +1,9 @@
 package raflyjamalullail.com.ze_app._model;
 
-public class EO_Model {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class EO_Model implements Parcelable {
     private String id, user_id, nama_eo, email, alamat, kontak, link, gambar_profil, deskripsi, created_at, updated_at;
 
     public EO_Model(String id, String user_id, String nama_eo, String email, String alamat, String kontak, String link, String gambar_profil, String deskripsi, String created_at, String updated_at) {
@@ -19,6 +22,32 @@ public class EO_Model {
 
     public EO_Model() {
     }
+
+    protected EO_Model(Parcel in) {
+        id = in.readString();
+        user_id = in.readString();
+        nama_eo = in.readString();
+        email = in.readString();
+        alamat = in.readString();
+        kontak = in.readString();
+        link = in.readString();
+        gambar_profil = in.readString();
+        deskripsi = in.readString();
+        created_at = in.readString();
+        updated_at = in.readString();
+    }
+
+    public static final Creator<EO_Model> CREATOR = new Creator<EO_Model>() {
+        @Override
+        public EO_Model createFromParcel(Parcel in) {
+            return new EO_Model(in);
+        }
+
+        @Override
+        public EO_Model[] newArray(int size) {
+            return new EO_Model[size];
+        }
+    };
 
     public String getId() {
         return id;
@@ -106,5 +135,25 @@ public class EO_Model {
 
     public void setUpdated_at(String updated_at) {
         this.updated_at = updated_at;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.id);
+        dest.writeString(this.user_id);
+        dest.writeString(this.nama_eo);
+        dest.writeString(this.email);
+        dest.writeString(this.alamat);
+        dest.writeString(this.kontak);
+        dest.writeString(this.link);
+        dest.writeString(this.gambar_profil);
+        dest.writeString(this.deskripsi);
+        dest.writeString(this.created_at);
+        dest.writeString(this.updated_at);
     }
 }

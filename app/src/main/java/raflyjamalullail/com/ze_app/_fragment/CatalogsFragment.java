@@ -51,7 +51,7 @@ public class CatalogsFragment extends Fragment {
             @Override
             protected String doInBackground(Void... voids) {
                 RequestHandler rh = new RequestHandler();
-                String s = rh.sendGetRequest(Config.URL_FETCH);
+                String s = rh.sendGetRequest(Config.URL_FETCH_EO);
                 Log.d(TAG, "doInBackground: json = "+s);
                 return s;
             }
@@ -95,7 +95,7 @@ public class CatalogsFragment extends Fragment {
             e.getStackTrace();
         }
 
-        ListViewAdapterEO listViewAdapterEO = new ListViewAdapterEO(getActivity(), R.layout.item_services, eo_modelArrayList);
-        listViewCatalog.setAdapter(listViewAdapterEO);
+//        ListViewAdapterEO listViewAdapterEO = new ListViewAdapterEO(getActivity(), R.layout.item_services, eo_modelArrayList);
+//        listViewCatalog.setAdapter(listViewAdapterEO);
     }
 }

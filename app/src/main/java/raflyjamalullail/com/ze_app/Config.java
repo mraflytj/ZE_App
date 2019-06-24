@@ -2,8 +2,9 @@ package raflyjamalullail.com.ze_app;
 
 public class Config {
 
-    public final static String BASE_URL = "http://192.168.1.28/ze_api/";
-    public final static String URL_FETCH = BASE_URL + "get_eos.php";
+    public final static String BASE_URL = "http://zen.invicit.com/api/";
+    public final static String URL_FETCH_EO = BASE_URL + "get_eos.php";
+
     public final static String TAG_EOS_ID = "id";
     public final static String TAG_EOS_USER_ID = "user_id";
     public final static String TAG_EOS_NAMA_EO = "nama_eo";
